@@ -1,9 +1,418 @@
-NOTE: Changelog is moved to [release](https://github.com/material-components/material-components-web/releases) page.
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [6.0.0](https://github.com/dbollinger/material-components-web/compare/v3.2.0...v6.0.0) (2020-04-20)
+
+
+* fix(linear-progress) support aria attributes (#5248) ([7084b40](https://github.com/dbollinger/material-components-web/commit/7084b403a4ab6be0856c670eebb39078a4fcbcfe)), closes [#5248](https://github.com/dbollinger/material-components-web/issues/5248)
+
+
+### Bug Fixes
+
+* add missing SASS dependencies ([#5337](https://github.com/dbollinger/material-components-web/issues/5337)) ([d2ae6e1](https://github.com/dbollinger/material-components-web/commit/d2ae6e17d19e7139bce45a0f44ce4ba172bbb3e6))
+* Remove edge detection for CSS custom properties ([#5264](https://github.com/dbollinger/material-components-web/issues/5264)) ([fe444ac](https://github.com/dbollinger/material-components-web/commit/fe444ac29da5447419cf4c25edbdf934c6e388e4))
+* server-side rendering errors in linear progress and slider ([7d0b983](https://github.com/dbollinger/material-components-web/commit/7d0b983a902deee6941d61906aa5a880628db4e9))
+* **textfield:** add placeholder mixins and fix disabled colors ([#5360](https://github.com/dbollinger/material-components-web/issues/5360)) ([0a40ced](https://github.com/dbollinger/material-components-web/commit/0a40ced406f96b5c84cf39457ffe880d00999714))
+* Use head instead of body to detect edge pseudo var bug ([#4982](https://github.com/dbollinger/material-components-web/issues/4982)) ([9e87478](https://github.com/dbollinger/material-components-web/commit/9e8747840594dd435e04220dc9f4aa31eb153a88))
+* **auto-init:** Fixed issue with multiple default exports ([#5464](https://github.com/dbollinger/material-components-web/issues/5464)) ([8ddd5c6](https://github.com/dbollinger/material-components-web/commit/8ddd5c6dcbfa6d81a063b37aee4021ebf34d18f0))
+* **button:** Adjust touch target size when density is applied ([#5112](https://github.com/dbollinger/material-components-web/issues/5112)) ([e2506f4](https://github.com/dbollinger/material-components-web/commit/e2506f4b3de7494767197c7c1510c019879f8ecf))
+* **button:** Fix outline & ink color according to spec guidance ([#5268](https://github.com/dbollinger/material-components-web/issues/5268)) ([ee1a68c](https://github.com/dbollinger/material-components-web/commit/ee1a68c54fa9240a334b0462513b855d5dab4807))
+* **button:** Fixed  parameter default value in height mixin ([#5244](https://github.com/dbollinger/material-components-web/issues/5244)) ([b0cecf1](https://github.com/dbollinger/material-components-web/commit/b0cecf1451c13fd8c159c1b0ca90b2a1e9b907a0))
+* **checkbox:** change checkbox event type from change to click and add some logic for IE browser ([#5316](https://github.com/dbollinger/material-components-web/issues/5316)) ([2e491de](https://github.com/dbollinger/material-components-web/commit/2e491de555d54f8d41474ccda156e5f9d0666bc4)), closes [#4893](https://github.com/dbollinger/material-components-web/issues/4893)
+* **checkbox:** Change minimum ripple size of checkbox & switch 24px => 28px ([#5140](https://github.com/dbollinger/material-components-web/issues/5140)) ([3eae309](https://github.com/dbollinger/material-components-web/commit/3eae309495f447c84ba493cb9cbb0058dc53cf6c))
+* **checkbox:** Disabled state colors in IE11 high contrast mode ([#5263](https://github.com/dbollinger/material-components-web/issues/5263)) ([d6a1d4b](https://github.com/dbollinger/material-components-web/commit/d6a1d4bf81b828f214e8bbf941090ef7d8e91c58))
+* **checkbox:** Fix checkbox terminology in sass mixins ([#5014](https://github.com/dbollinger/material-components-web/issues/5014)) ([2161c02](https://github.com/dbollinger/material-components-web/commit/2161c024d012ab90ea6580d53a59d17affcc0e20))
+* **checkbox:** Remove RTL styles from checkbox ripple ([#5134](https://github.com/dbollinger/material-components-web/issues/5134)) ([a646516](https://github.com/dbollinger/material-components-web/commit/a6465161b31ebe79a2aecf38f918197e1d83a632))
+* **checkbox:** Replace unique-id with custom color hash functio… ([#5404](https://github.com/dbollinger/material-components-web/issues/5404)) ([7be9e4a](https://github.com/dbollinger/material-components-web/commit/7be9e4a04387b9ca5f8afae6e4edcb3b37e6a86b))
+* **checkbox:** update disabled color values ([#5209](https://github.com/dbollinger/material-components-web/issues/5209)) ([821871e](https://github.com/dbollinger/material-components-web/commit/821871e04737c5b0c0afded9e8e885680ca25a1f))
+* **checkbox:** Use secondary and on-secondary as default colors ([b95172e](https://github.com/dbollinger/material-components-web/commit/b95172e69613c0defe82191b86ed1c1999b74400)), closes [#5730](https://github.com/dbollinger/material-components-web/issues/5730)
+* **chips:** .d.ts file generated with syntax error ([d154836](https://github.com/dbollinger/material-components-web/commit/d1548369f2311e164b0920ed651ba211d05543fa))
+* **chips:** .d.ts file generated with syntax error ([#5577](https://github.com/dbollinger/material-components-web/issues/5577)) ([98f7faa](https://github.com/dbollinger/material-components-web/commit/98f7faa05fa7c88e0231a00942f4ff9dedf4e8c0))
+* **chips:** Do not throw error if chip set becomes empty ([#5290](https://github.com/dbollinger/material-components-web/issues/5290)) ([f978109](https://github.com/dbollinger/material-components-web/commit/f978109c33d9e67aebe5af3e460174686eea7b4a))
+* **chips:** Fix browser back nav in FF when removing chip with… ([#5537](https://github.com/dbollinger/material-components-web/issues/5537)) ([a1a0deb](https://github.com/dbollinger/material-components-web/commit/a1a0deb3ea47d5d89efdcab062e438218148b975))
+* **chips:** Handle IE/Edge specific key names in keyboard navigation logic ([3657f88](https://github.com/dbollinger/material-components-web/commit/3657f886327182c26f1d1555b2ac67c2128140b5))
+* **chips:** Move touch target inside primary action ([ad3bbf7](https://github.com/dbollinger/material-components-web/commit/ad3bbf7822d1fe26694b798299c48e8896971e25))
+* **chips:** Reset touch target when chip density mixin is applied. ([#5116](https://github.com/dbollinger/material-components-web/issues/5116)) ([d3b515e](https://github.com/dbollinger/material-components-web/commit/d3b515e894da3045b24816226306254516c6995a))
+* **chips:** Stack trailing/leading icons above touch target el ([#5040](https://github.com/dbollinger/material-components-web/issues/5040)) ([048d4b7](https://github.com/dbollinger/material-components-web/commit/048d4b7bf4335f03c8f18051989ffc6fe1693b12))
+* **circular-progress:** Add .npmignore file to ignore typescript files when publishing ([#5801](https://github.com/dbollinger/material-components-web/issues/5801)) ([f172b0f](https://github.com/dbollinger/material-components-web/commit/f172b0f90a91d8d3d700763d1496bb7b9c1a8d51)), closes [#5800](https://github.com/dbollinger/material-components-web/issues/5800)
+* **circular-progress:** fix determinate transition typo & 4 color keyframes ([a301636](https://github.com/dbollinger/material-components-web/commit/a3016368df53b1c7967d7d146a9ea53a24442fa9))
+* **circular-progress:** Fix naming in package.json and add to jsBundleFactory ([86f7cad](https://github.com/dbollinger/material-components-web/commit/86f7cad8330dbd600e478610eefd8dd92eb3d8c7))
+* **circular-progress:** Force LTR layout ([6a40ef2](https://github.com/dbollinger/material-components-web/commit/6a40ef217f597138ee2920d2160364649dbf5620))
+* **circular-progress:** Switch mixins import to `[@use](https://github.com/use)` ([098ae32](https://github.com/dbollinger/material-components-web/commit/098ae3285223af2532659dec233537a55c1183f5))
+* **core:** Fix canary release by excluding test files from default tsconfig ([#5317](https://github.com/dbollinger/material-components-web/issues/5317)) ([c916008](https://github.com/dbollinger/material-components-web/commit/c9160084f1f64800e74e0e69673c6b2beca22ee4))
+* **data-table:** Add .npmignore to ignore typescript files when… ([#4992](https://github.com/dbollinger/material-components-web/issues/4992)) ([dd422d1](https://github.com/dbollinger/material-components-web/commit/dd422d10cd2f4cf8fbb1f58a849354756325dcb0))
+* **data-table:** change svg attribute name viewbox to viewBox ([#5483](https://github.com/dbollinger/material-components-web/issues/5483)) ([#5493](https://github.com/dbollinger/material-components-web/issues/5493)) ([f3adce8](https://github.com/dbollinger/material-components-web/commit/f3adce86f43c15d3e2311363bf317ff68a3bb99d))
+* **data-table:** Fix pagination box height ([eb28b6e](https://github.com/dbollinger/material-components-web/commit/eb28b6ecc65a9979ef0959eac5dbfde5b4d3b2dc))
+* **data-table:** Fixed default feature targeting query params of sort mixins ([e33c49e](https://github.com/dbollinger/material-components-web/commit/e33c49eaf9c0dbc601f3610af6358cbf2833229c))
+* **data-table:** Hover styles for sortable header cell ([d580805](https://github.com/dbollinger/material-components-web/commit/d5808057fcdf00364731e0896ef7031ac605cf55))
+* **data-table:** Minor fixes for data table layout ([#5037](https://github.com/dbollinger/material-components-web/issues/5037)) ([37b1f93](https://github.com/dbollinger/material-components-web/commit/37b1f93188e049c65a3422b742a076affab2e84d))
+* **data-table:** Reverse the arrow direction icon for column sorting ([a7c827f](https://github.com/dbollinger/material-components-web/commit/a7c827f17ce9be631484676ccb6b5f18604803ae))
+* **data-table:** unable to redefine colors in class-based themi… ([#5751](https://github.com/dbollinger/material-components-web/issues/5751)) ([4d48051](https://github.com/dbollinger/material-components-web/commit/4d48051c1099f48e867cf08f070138a7abc719fc))
+* **data-table:** unable to redefine colors in class-based theming ([4b45b66](https://github.com/dbollinger/material-components-web/commit/4b45b662057edd8819f1a515db88e1c12254cc30))
+* **dialog:** Move aria roles from dialog root to dialog surface… ([#5239](https://github.com/dbollinger/material-components-web/issues/5239)) ([c704b71](https://github.com/dbollinger/material-components-web/commit/c704b71d931dd0db191a30ff88a5d0c44f099300))
+* **elevation:** Update overlay color mixin ([#5331](https://github.com/dbollinger/material-components-web/issues/5331)) ([b723dfa](https://github.com/dbollinger/material-components-web/commit/b723dfa7848c4b96bc24bb148cc5f55f316625ee))
+* **fab:** Add missing dep to fab package.json. ([#5236](https://github.com/dbollinger/material-components-web/issues/5236)) ([e0f6fd9](https://github.com/dbollinger/material-components-web/commit/e0f6fd931f677874dcad4d91c3d74a2125674e96))
+* **fab:** Add overflow: hidden; to ripple target to fix bounded ripple. ([#5214](https://github.com/dbollinger/material-components-web/issues/5214)) ([97cbbdc](https://github.com/dbollinger/material-components-web/commit/97cbbdc28c1623acbc40c878e2b3d48c80c01cef))
+* **fab:** Add overflow: visible to make touch target visible in… ([#5241](https://github.com/dbollinger/material-components-web/issues/5241)) ([5850080](https://github.com/dbollinger/material-components-web/commit/58500806e27a0931404631d76bc09646bc64caaf))
+* **fab:** Adjust fab line-height ([#5254](https://github.com/dbollinger/material-components-web/issues/5254)) ([525989b](https://github.com/dbollinger/material-components-web/commit/525989b5d8dfe86bcb6f65e0f0f0fd138e4b4b76))
+* **fab:** Adjust fab line-height to center text ([#5258](https://github.com/dbollinger/material-components-web/issues/5258)) ([591a6ad](https://github.com/dbollinger/material-components-web/commit/591a6ad449f98efa7bc00c8afdd2716a6fbe75d9))
+* **fab:** Use FAB ripple target selector ([#5146](https://github.com/dbollinger/material-components-web/issues/5146)) ([9d91acc](https://github.com/dbollinger/material-components-web/commit/9d91acc0ec332bdda462075f534204ec2ea7af9c))
+* **floatinglabel:** Estimate hidden scroll width ([#5448](https://github.com/dbollinger/material-components-web/issues/5448)) ([981ec9b](https://github.com/dbollinger/material-components-web/commit/981ec9b6fd538caadb44f7469745de8f8954c89b))
+* **form-field:** Fix radio RTL alignment bug. ([#5064](https://github.com/dbollinger/material-components-web/issues/5064)) ([ef99808](https://github.com/dbollinger/material-components-web/commit/ef99808cba809294cb2d90903d12cdf930071f4d))
+* **linear-progress:** Fix indeterminate animation bug ([#5180](https://github.com/dbollinger/material-components-web/issues/5180)) ([062ade5](https://github.com/dbollinger/material-components-web/commit/062ade5c052cf00cefeee6e8e0acf7d16c4ce338))
+* **linear-progress:** Prefix animation keyframes to prevent clashing ([#5155](https://github.com/dbollinger/material-components-web/issues/5155)) ([fc0e474](https://github.com/dbollinger/material-components-web/commit/fc0e4743be6d6187c31b745c935d18f5b7d2267b))
+* **linear-progress:** Restore buffer after determinate is toggl… ([#5156](https://github.com/dbollinger/material-components-web/issues/5156)) ([09b1598](https://github.com/dbollinger/material-components-web/commit/09b1598116b26905f2f58eab84b977e035174c26))
+* **linear-progress:** stop animation when closed ([#5006](https://github.com/dbollinger/material-components-web/issues/5006)) ([4c4342d](https://github.com/dbollinger/material-components-web/commit/4c4342d28c251f963498c117322532b7180d6196))
+* **linear-progress:** Support high contrast mode ([#5190](https://github.com/dbollinger/material-components-web/issues/5190)) ([d4141c9](https://github.com/dbollinger/material-components-web/commit/d4141c954311888017a61c7e7fdcd0fd5c99bf1f))
+* **linear-progress:** Temporary rollback of [#5656](https://github.com/dbollinger/material-components-web/issues/5656) while updating downstream dependencies ([9cf5e98](https://github.com/dbollinger/material-components-web/commit/9cf5e9842475e50046462aa1c6d18e326abaee17))
+* **list:** Add #adapter.listItemAtIndexHasClass to prevent user state change to disabled items ([#4922](https://github.com/dbollinger/material-components-web/issues/4922)) ([b6d213c](https://github.com/dbollinger/material-components-web/commit/b6d213c4c28090f631d2ce7a1dcdde30462c3003))
+* **list:** Ensure disabled colors apply to primary and secondary text ([#5322](https://github.com/dbollinger/material-components-web/issues/5322)) ([878a08b](https://github.com/dbollinger/material-components-web/commit/878a08b7cf673ba45f124b400032928b2c273749))
+* **list:** ensure sass mixin works if leading is provided in px ([265ecba](https://github.com/dbollinger/material-components-web/commit/265ecbad56c001c0fed391b6be66f0d5ec483838))
+* **list:** No longer emits action event when disabled item selected ([f352d03](https://github.com/dbollinger/material-components-web/commit/f352d03f4ed48c5019a0a3e10ef12689a5ab5619)), closes [#5571](https://github.com/dbollinger/material-components-web/issues/5571)
+* **menu:** recompute index before marking selection ([#5047](https://github.com/dbollinger/material-components-web/issues/5047)) ([90f6247](https://github.com/dbollinger/material-components-web/commit/90f6247547bfbe754bd93b54d1965259daa746c9))
+* **menu-surface:** remove duplicate export from menu-surface ([#5200](https://github.com/dbollinger/material-components-web/issues/5200)) ([0b120ae](https://github.com/dbollinger/material-components-web/commit/0b120ae75f23ca0c30cec680f8e4145995e81dae))
+* **menu-surface:** Use margin_to_edge as a viewport margin in calculations for autopositioning. ([4b04cdb](https://github.com/dbollinger/material-components-web/commit/4b04cdb0fc4da4831340b01292c118b120c1fcb1))
+* **menusurface:** synchronous quick menu does not close on button click ([45a6615](https://github.com/dbollinger/material-components-web/commit/45a6615e33eb8a7e6fc37e9ef43a3be3682b6b0e))
+* **notched-outline:** Restore component test ([#5449](https://github.com/dbollinger/material-components-web/issues/5449)) ([4269133](https://github.com/dbollinger/material-components-web/commit/4269133421f7058385255b0676be94c9c1170b2d))
+* **radio:** Fix touch target margins: 0px => 4px. ([#5096](https://github.com/dbollinger/material-components-web/issues/5096)) ([a48d06e](https://github.com/dbollinger/material-components-web/commit/a48d06eae1f634a65fd24226d4a47f0cd253ba21))
+* **radio:** update disabled color values ([#5210](https://github.com/dbollinger/material-components-web/issues/5210)) ([491fddc](https://github.com/dbollinger/material-components-web/commit/491fddc31c16f99206b1fa7dce37d43b742e86f5))
+* **ripple:** Add overflow: hidden; to the bounded ripple mixin ([#5173](https://github.com/dbollinger/material-components-web/issues/5173)) ([996b091](https://github.com/dbollinger/material-components-web/commit/996b0910c2ceec75f99c0679714ebe474a63bca5))
+* **ripple:** Always set even num when initial ripple size is ca… ([#5141](https://github.com/dbollinger/material-components-web/issues/5141)) ([b26ad23](https://github.com/dbollinger/material-components-web/commit/b26ad23e45ed66040cb1bb03e7a7f7f5d8321b53))
+* **ripple:** Remove unnecessary overflow: hidden. ([#5191](https://github.com/dbollinger/material-components-web/issues/5191)) ([5916d18](https://github.com/dbollinger/material-components-web/commit/5916d18cfd2b3277665da6b61f44cc27095fff53))
+* **rtl:** Removed mdc-rtl-include check from mdc-rtl-reflexive mixin ([#5001](https://github.com/dbollinger/material-components-web/issues/5001)) ([6e7b191](https://github.com/dbollinger/material-components-web/commit/6e7b1919f3690ef57f94f648ab49329aa875cef7))
+* **select:** Deduplicate change events ([4ad1274](https://github.com/dbollinger/material-components-web/commit/4ad12741e41c5b8e175f2bc8d5053daec6cedf18)), closes [#5570](https://github.com/dbollinger/material-components-web/issues/5570)
+* **select:** Do not fire change event on programmatic change ([#5255](https://github.com/dbollinger/material-components-web/issues/5255)) ([ec72968](https://github.com/dbollinger/material-components-web/commit/ec729683b46fb986a880f26870973337ec6788e5))
+* **select:** Fix notch outline width when floating ([#5319](https://github.com/dbollinger/material-components-web/issues/5319)) ([1c494e5](https://github.com/dbollinger/material-components-web/commit/1c494e5672c142f3f3451aa2270431844d35c88e))
+* **slider:** slider track not visible ([#5512](https://github.com/dbollinger/material-components-web/issues/5512)) ([f2426d2](https://github.com/dbollinger/material-components-web/commit/f2426d26e683591cee87b4107f990492b47ec837))
+* **slider:** use secondary custom property color for slider container ([#5132](https://github.com/dbollinger/material-components-web/issues/5132)) ([aa8e43e](https://github.com/dbollinger/material-components-web/commit/aa8e43e9afaa1e00080f149bbe497746b57a285a))
+* **slider:** Visual bug when slider value is displayed as "-0" ([3fc3ab5](https://github.com/dbollinger/material-components-web/commit/3fc3ab520ab5399c3b87b094e047a1751f7aa9af))
+* **snackbar:** add explicit width for label to wrap in ie11 ([#5497](https://github.com/dbollinger/material-components-web/issues/5497)) ([cd49033](https://github.com/dbollinger/material-components-web/commit/cd4903304412d79be8da96499091259b5e954c80))
+* **snackbar:** adjust mixins to meet spec ([#5477](https://github.com/dbollinger/material-components-web/issues/5477)) ([f16f15b](https://github.com/dbollinger/material-components-web/commit/f16f15b8fda0d8c283bed5551b78620bf2fd3b82))
+* **switch:** add transform transition to switch control to avoid overflow-x issues ([8c11ea2](https://github.com/dbollinger/material-components-web/commit/8c11ea2a3bd7962c6d895c5bd6b849f95b52d10c))
+* **switch:** always set track to transparent border ([9a169f4](https://github.com/dbollinger/material-components-web/commit/9a169f4b158a3148126ba38bcdfa9d163434d9bb))
+* **switch:** fix strict generic checks ([7f5e0c2](https://github.com/dbollinger/material-components-web/commit/7f5e0c23ffb2f547d9bfca6b68927b5861a3112b))
+* **switch:** handle aria-checked correctly. ([#5202](https://github.com/dbollinger/material-components-web/issues/5202)) ([#5357](https://github.com/dbollinger/material-components-web/issues/5357)) ([d245a1a](https://github.com/dbollinger/material-components-web/commit/d245a1a544c643b59f77cd2e01b7eb2c1182f6b9))
+* **switch:** set track border to be transparent ([#5323](https://github.com/dbollinger/material-components-web/issues/5323)) ([397905b](https://github.com/dbollinger/material-components-web/commit/397905b4e34ff9769d3ae18464bc397a0b13050f))
+* **switch:** use CSS custom properties for theming ([d6315ef](https://github.com/dbollinger/material-components-web/commit/d6315efe26e7baf45fd88244efbb24c612a95cb4))
+* **tabs:** Fix tab img icon styling. ([#5041](https://github.com/dbollinger/material-components-web/issues/5041)) ([d0e6cd1](https://github.com/dbollinger/material-components-web/commit/d0e6cd1903d3e72bab588629ba4c126e0519785e))
+* **testing:** Revert change from [#5299](https://github.com/dbollinger/material-components-web/issues/5299). ([#5324](https://github.com/dbollinger/material-components-web/issues/5324)) ([5fb62be](https://github.com/dbollinger/material-components-web/commit/5fb62bead477f7db9a76d9c0adbfee4e9c110d37))
+* **text-field:** Do not trigger shake animation when text field is empty ([#5097](https://github.com/dbollinger/material-components-web/issues/5097)) ([4913db9](https://github.com/dbollinger/material-components-web/commit/4913db9711bd9a2b69fd15ec650b98ca7027b257))
+* **text-field:** Fixes input text alignment on IE11 for densed text field ([#5136](https://github.com/dbollinger/material-components-web/issues/5136)) ([892dd4e](https://github.com/dbollinger/material-components-web/commit/892dd4ed42271be81cee3da21912c248f0df8533))
+* **text-field:** Fixes input text alignment on IE11 for densed… ([#5147](https://github.com/dbollinger/material-components-web/issues/5147)) ([c8f7693](https://github.com/dbollinger/material-components-web/commit/c8f76938c8ec82d005196f425860585b0bfb8278))
+* **text-field:** Updated shape mixins to set density scale ([#5207](https://github.com/dbollinger/material-components-web/issues/5207)) ([719b57e](https://github.com/dbollinger/material-components-web/commit/719b57e1c755c2886539032f728809cd47fab2a4))
+* **textfield:** add separate classes for leading/trailing icons ([#5367](https://github.com/dbollinger/material-components-web/issues/5367)) ([70c708d](https://github.com/dbollinger/material-components-web/commit/70c708deece4c2c0afe38a31a4989abf2b1c1743))
+* **textfield:** change root element to <label> ([#5439](https://github.com/dbollinger/material-components-web/issues/5439)) ([d8d9502](https://github.com/dbollinger/material-components-web/commit/d8d95020ff94249f8755ca49aaa06a6e9f0813b0))
+* **textfield:** clean up input padding ([8639c26](https://github.com/dbollinger/material-components-web/commit/8639c269010b77b17f1a5052d57abcb5f7d2892a))
+* **textfield:** hide filled-variant floating label at <52px ([#5553](https://github.com/dbollinger/material-components-web/issues/5553)) ([5ff3380](https://github.com/dbollinger/material-components-web/commit/5ff33802c22acf7d94fd94c9ccdcfcf901397d56))
+* **textfield:** IE11 label overlapping placeholder ([781434a](https://github.com/dbollinger/material-components-web/commit/781434a92f4dddc9b2d39853e1f5792e89e7b45b))
+* **textfield:** incorrect mixin forward path ([#5554](https://github.com/dbollinger/material-components-web/issues/5554)) ([3e782d8](https://github.com/dbollinger/material-components-web/commit/3e782d8f84c0096f6a6de3e022017fbb05175fa2))
+* **textfield:** move ripple to separate element ([c541ebe](https://github.com/dbollinger/material-components-web/commit/c541ebe157a66e8d2e881fad16cc4dbe30b2c16b))
+* **textfield:** outlined trailing icon's position ([#5496](https://github.com/dbollinger/material-components-web/issues/5496)) ([93e2288](https://github.com/dbollinger/material-components-web/commit/93e2288b6ef73c13402a1f5122e2f9a4523ed4a4))
+* **textfield:** prevent placeholder styles from collapsing with minifiers ([d07c78d](https://github.com/dbollinger/material-components-web/commit/d07c78daa83389ef428618d334b037da67740b99))
+* **textfield:** remove absolute positioning from icons ([1e13d1d](https://github.com/dbollinger/material-components-web/commit/1e13d1d5a68632f1b0b5a9134f657d59104969f4))
+* **textfield:** remove deprecated dense variant in favor of density ([776291e](https://github.com/dbollinger/material-components-web/commit/776291ef03205e4063b4040eb66f9648e16b4af6)), closes [#4142](https://github.com/dbollinger/material-components-web/issues/4142)
+* **textfield:** replace notched outline and ripple `<div>`s with `<span>` ([765caef](https://github.com/dbollinger/material-components-web/commit/765caef189844153ac7e47f0102139dc938edbfb))
+* **textfield:** use correct disabled colors for IE11 high contrast ([5353985](https://github.com/dbollinger/material-components-web/commit/535398572daea2ec389c341f4e0c53cb33582b26))
+* **top-app-bar:** "always collapsed" variant semantics in Short TopAppBar Foundation ([#5009](https://github.com/dbollinger/material-components-web/issues/5009)) ([805d098](https://github.com/dbollinger/material-components-web/commit/805d098aa73810659ecf9fb4d2d701181955eb54))
+* **touch-target:** Add class to touch target wrapper. ([#5174](https://github.com/dbollinger/material-components-web/issues/5174)) ([e7799b8](https://github.com/dbollinger/material-components-web/commit/e7799b81a670590307e9014ecfbda0b637c96c98))
+* **touch-target:** Add missing dependency - touch target to com… ([#5098](https://github.com/dbollinger/material-components-web/issues/5098)) ([9306bd0](https://github.com/dbollinger/material-components-web/commit/9306bd0834b91af311c3bac1cb430bc0b0c9d20e))
+* **typography:** ensure global variables can override styles with module system ([7ec9697](https://github.com/dbollinger/material-components-web/commit/7ec96974ef0c0c743b1eaaec40524ddc9c7e99e5))
+* **typography:** Separate @material/feature-targeting, was causing Sass test to fail ([772a03e](https://github.com/dbollinger/material-components-web/commit/772a03ef057047f506bb858dead1d59db0fce50e))
+
+
+### Code Refactoring
+
+* migrate to the Sass module system ([#5453](https://github.com/dbollinger/material-components-web/issues/5453)) ([faa9af3](https://github.com/dbollinger/material-components-web/commit/faa9af310d1a18ec2c183830c84eb14d0492feab))
+* **grid-list:** Deprecate component ([#5499](https://github.com/dbollinger/material-components-web/issues/5499)) ([cf33f11](https://github.com/dbollinger/material-components-web/commit/cf33f113dd89bbfb2873c9ce3fa1525076bfd4ec))
+* **linear-progress:** Restructure buffer DOM to allow translucent buffer ([98b8434](https://github.com/dbollinger/material-components-web/commit/98b843417ef6c0a10460532a37df389b0c7e936f))
+* **linear-progress:** Restructure buffer DOM to allow translucent buffer ([9372e49](https://github.com/dbollinger/material-components-web/commit/9372e493954585c939f341486d0361efb87da806))
+* **mdc-fab:** Move Ripple to inner Element. ([#4997](https://github.com/dbollinger/material-components-web/issues/4997)) ([85b33b5](https://github.com/dbollinger/material-components-web/commit/85b33b50eb1757656697bc04a44dfd0eb635358d))
+* **select:** Refactor select ([#5113](https://github.com/dbollinger/material-components-web/issues/5113)) ([db7560e](https://github.com/dbollinger/material-components-web/commit/db7560ee678ef4738690152d8b23c491030fc4a6))
+* **touchtarget:** Rename mdc-touch-target-component => mdc… ([#5245](https://github.com/dbollinger/material-components-web/issues/5245)) ([afe0dd1](https://github.com/dbollinger/material-components-web/commit/afe0dd1bc240a7a88d76b0a3bf1a36044527babd))
+
+
+### Features
+
+* **button:** Add disabled state color mixins ([#5232](https://github.com/dbollinger/material-components-web/issues/5232)) ([b5eb51e](https://github.com/dbollinger/material-components-web/commit/b5eb51e942b8f233bc1a9a5cf4b4d0c94fb8ea57))
+* **button:** Add overflow ellipsis mixin ([#5352](https://github.com/dbollinger/material-components-web/issues/5352)) ([47949b0](https://github.com/dbollinger/material-components-web/commit/47949b08e0a2ec82178c638d8074c34c745409b4))
+* **button:** Expand outlined touch target to include side borders ([ce6cb70](https://github.com/dbollinger/material-components-web/commit/ce6cb7024d1da3b0e4fb5e2c67ba269dbb3098ec))
+* **button:** Setup elevation overlay ([#5256](https://github.com/dbollinger/material-components-web/issues/5256)) ([3cbee6d](https://github.com/dbollinger/material-components-web/commit/3cbee6dac7cafbe8986bad0a8593d870b00f5f32))
+* **card:** Add elevation overlay structure ([#5282](https://github.com/dbollinger/material-components-web/issues/5282)) ([aa0eba4](https://github.com/dbollinger/material-components-web/commit/aa0eba489a33cb523ae1b5ac5b0ab24995731456))
+* **checkbox:** Add disabled state color mixins ([#5167](https://github.com/dbollinger/material-components-web/issues/5167)) ([01628ef](https://github.com/dbollinger/material-components-web/commit/01628efaa65dce47571fe4d6b1fcc30ba547f259))
+* **checkbox:** Add support for 48px touch target ([#5025](https://github.com/dbollinger/material-components-web/issues/5025)) ([b5685a8](https://github.com/dbollinger/material-components-web/commit/b5685a81736372701f38ae69f9d7480b5d52a01b))
+* **checkbox:** Add support for checkbox CSS-only `indeterminate` checkbox ([b273afa](https://github.com/dbollinger/material-components-web/commit/b273afa93441e6d0375f7df33d5b69d8a7e1cfa8))
+* **chip:** Add density mixin to chip. ([#5109](https://github.com/dbollinger/material-components-web/issues/5109)) ([bdf3430](https://github.com/dbollinger/material-components-web/commit/bdf3430781bc9b8efcff47695f613c253739b78c))
+* **chips:** Add chips styling ([1db5c9f](https://github.com/dbollinger/material-components-web/commit/1db5c9fc842292715f8b4603ce0b979066f1c639))
+* **chips:** Add elevation overlay structure ([#5279](https://github.com/dbollinger/material-components-web/issues/5279)) ([3e560b3](https://github.com/dbollinger/material-components-web/commit/3e560b33a8fbf820a404596d76ae5f743e57b6a2))
+* **chips:** Add focus{in|out} handlers ([10af6cf](https://github.com/dbollinger/material-components-web/commit/10af6cf39cb2ae0a7deb9a951960f115f6ecdace))
+* **chips:** Add keyCode support ([82fa986](https://github.com/dbollinger/material-components-web/commit/82fa986b95be4c16271df50effda1046d015d35c))
+* **chips:** Add trailing action feature targeting test ([bec0659](https://github.com/dbollinger/material-components-web/commit/bec0659206aee793e6970d59c73f7969ab540b69))
+* **chips:** Announce when chips are removed ([b3f70eb](https://github.com/dbollinger/material-components-web/commit/b3f70ebded85240e75c6d1553cc9d0382b22c31d))
+* **chips:** Consolidate interaction event handlers ([#5251](https://github.com/dbollinger/material-components-web/issues/5251)) ([5729943](https://github.com/dbollinger/material-components-web/commit/5729943baf1726e931e26907c78774f2caec404e))
+* **chips:** Create trailing action business logic ([9ebee4c](https://github.com/dbollinger/material-components-web/commit/9ebee4ceb998e5fa651d4f147e5e39d43600db6e))
+* **chips:** Expose trailing action chip files ([6b48781](https://github.com/dbollinger/material-components-web/commit/6b48781bf97d3b08b8f35b9eacde2b87748ae2e1))
+* **chips:** Restructure trailing action mixins ([05f5e15](https://github.com/dbollinger/material-components-web/commit/05f5e1583b81bc00dbcd2ae21ee0acc43b3e13b4))
+* **circular-progress:** Add foundation methods to get isDeterminate and progress value ([7d8f9c8](https://github.com/dbollinger/material-components-web/commit/7d8f9c8d73f16c01ed4a941ab9510377a0aae219))
+* **circular-progress:** Add Sass styles and tests ([bd33cb5](https://github.com/dbollinger/material-components-web/commit/bd33cb56bdab7139052aeedbeec363f17b4dfc40))
+* **circular-progress:** Add TS for foundation, adapter, component with tests ([548b1d4](https://github.com/dbollinger/material-components-web/commit/548b1d4057f21e066a4c494a57a0c068c23e18cd))
+* **data-table:** Add base styles to support pagination. ([927fa90](https://github.com/dbollinger/material-components-web/commit/927fa902c3297a5a7cc9436e82cb81f3aabe1b4b))
+* **data-table:** Add foundation methods to support loading state. ([e75deb8](https://github.com/dbollinger/material-components-web/commit/e75deb8540fa70236087d335c9cd6280bd643285))
+* **data-table:** Added styles for table in loading state ([35a32aa](https://github.com/dbollinger/material-components-web/commit/35a32aaeac17e290e2e9f9a1310c5a44a08f624a))
+* **data-table:** Added styles to support column sorting. ([17b9699](https://github.com/dbollinger/material-components-web/commit/17b9699c4454a107043e5a1f9874a091089dd112))
+* **data-table:** Foundation changes to support column sorting ([6ee0355](https://github.com/dbollinger/material-components-web/commit/6ee03557260d0a23296e36cba5aaa76fe0cf96a6))
+* **data-table:** Set progress indicator styles based on table body height ([c026422](https://github.com/dbollinger/material-components-web/commit/c0264227393df8eb9259a2b24c23b31fe0ca84f3))
+* **density:** Add density subsystem to components ([#5059](https://github.com/dbollinger/material-components-web/issues/5059)) ([73a5e4c](https://github.com/dbollinger/material-components-web/commit/73a5e4cfb01f73922501241f9f24ac9c2d059547))
+* **dialog:** Add dialog mixin for dialogs with increased touch target buttons. ([#5024](https://github.com/dbollinger/material-components-web/issues/5024)) ([2ef1ddd](https://github.com/dbollinger/material-components-web/commit/2ef1ddd66b11709c7e22c674587e95c888a4842e))
+* **dialog:** Add elevation overlay structure ([#5283](https://github.com/dbollinger/material-components-web/issues/5283)) ([b8bc4a2](https://github.com/dbollinger/material-components-web/commit/b8bc4a26ea70356cc96de8fd3266890048f0a3ab))
+* **dom:** Add focus trap utility. ([#5505](https://github.com/dbollinger/material-components-web/issues/5505)) ([63f357d](https://github.com/dbollinger/material-components-web/commit/63f357dbf5c7e84c3961aafc09e0fb4f4a9c3cda))
+* **dom:** Add keyboard support ([5f24faa](https://github.com/dbollinger/material-components-web/commit/5f24faacb1ef8996ae81f3a1c1e43910ba67b024))
+* **dom:** Create announcer utility ([32c1df1](https://github.com/dbollinger/material-components-web/commit/32c1df133f07679b44ce34ed9d11e22035f8d3d9))
+* **elevation:** Add elevation overlay mixins ([#5249](https://github.com/dbollinger/material-components-web/issues/5249)) ([b4cfdc4](https://github.com/dbollinger/material-components-web/commit/b4cfdc40b7c4a3d3fc48df2b68b7091552c27610))
+* **elevation:** Update elevation mixins ([#5304](https://github.com/dbollinger/material-components-web/issues/5304)) ([ba879b6](https://github.com/dbollinger/material-components-web/commit/ba879b68bde09d713faa5cd77aea9d2bd2759e33))
+* **fab:** Add elevation overlay structure ([#5278](https://github.com/dbollinger/material-components-web/issues/5278)) ([e89750d](https://github.com/dbollinger/material-components-web/commit/e89750dc78ea521561a03e020f4414479de5a5b9))
+* **fab:** Add support for increased touch target to mini FAB. ([#5231](https://github.com/dbollinger/material-components-web/issues/5231)) ([0c4d8f3](https://github.com/dbollinger/material-components-web/commit/0c4d8f3923f9a089132ed8dca4062b72d3576aca))
+* **floating-label:** add feature targeting for styles ([#5287](https://github.com/dbollinger/material-components-web/issues/5287)) ([b240bcc](https://github.com/dbollinger/material-components-web/commit/b240bcc1bbb3cfd1f753918ec1553dbe1bb6d007))
+* **form-field:** Add support for space-between ([e84b9c8](https://github.com/dbollinger/material-components-web/commit/e84b9c816d32da6dec058d92fc21dc5ac8fec787)), closes [#5747](https://github.com/dbollinger/material-components-web/issues/5747)
+* **formfield:** add nowrap class/prop to MDC/MWC ([c4b4bba](https://github.com/dbollinger/material-components-web/commit/c4b4bba9659bf15207e79b1f63fcc9946404d9c7))
+* **icon-button:** Add density mixin to icon button ([#5122](https://github.com/dbollinger/material-components-web/issues/5122)) ([37d6458](https://github.com/dbollinger/material-components-web/commit/37d64581dbaf73b53c1368ebeaba16727f6c9d86))
+* **icon-button:** Add disabled state color mixins ([#5246](https://github.com/dbollinger/material-components-web/issues/5246)) ([7161170](https://github.com/dbollinger/material-components-web/commit/7161170f2e39b73b69b97dec11ebf94e1d3a10c4))
+* **iconbutton:** Add icon button variant which supports toggling aria label. ([f838c6e](https://github.com/dbollinger/material-components-web/commit/f838c6e55672268de4e6e3b31b154d4f9050242f))
+* **line-ripple:** add active/inactive states to line-ripple ([b6c7f62](https://github.com/dbollinger/material-components-web/commit/b6c7f624bc7d88e2e371efcb125c7a6bac55eab7))
+* **line-ripple:** add feature targeting for styles ([#5292](https://github.com/dbollinger/material-components-web/issues/5292)) ([391674a](https://github.com/dbollinger/material-components-web/commit/391674a2649800f07e3ac1993a5fce157391fbd9))
+* **linear-progress:** add feature targeting for styles ([#4898](https://github.com/dbollinger/material-components-web/issues/4898)) ([7ec18c6](https://github.com/dbollinger/material-components-web/commit/7ec18c6c057254abd3bc11923cf82a702a9ee2b9))
+* **linear-progress:** Add foundation methods to fetch progress and determinate state. ([4dc45af](https://github.com/dbollinger/material-components-web/commit/4dc45af6c4bc81f5734a24c160046d283c1e9a6d))
+* **list:** Add density mixin to list ([#5069](https://github.com/dbollinger/material-components-web/issues/5069)) ([5132f89](https://github.com/dbollinger/material-components-web/commit/5132f8997e5766f1cda216093f867f4ba253def0))
+* **menu:** Add elevation overlay structure ([#5280](https://github.com/dbollinger/material-components-web/issues/5280)) ([7fd17ce](https://github.com/dbollinger/material-components-web/commit/7fd17ce5ed73c86b987c8a8e4cd08ea444fff8b7))
+* **menu:** Add mixin to flatten menu top when opened-below anchor ([1e17c49](https://github.com/dbollinger/material-components-web/commit/1e17c49b360fd0e01c9a74b92978031534003b5b))
+* **notched-outline:** add feature targeting for styles ([#5289](https://github.com/dbollinger/material-components-web/issues/5289)) ([c483774](https://github.com/dbollinger/material-components-web/commit/c4837746ccebf375daa4c5dd891fea533bb134f7))
+* **progress-indicator:** Add common interface for progress indicators ([#5564](https://github.com/dbollinger/material-components-web/issues/5564)) ([ea863cb](https://github.com/dbollinger/material-components-web/commit/ea863cb918b9c096e36a7bc653d6661757e71b64))
+* **radio:** Add density mixin to radio ([#5118](https://github.com/dbollinger/material-components-web/issues/5118)) ([199534d](https://github.com/dbollinger/material-components-web/commit/199534d61bcce7064d2762d0f2d837a8c1e3639b))
+* **radio:** Add disabled state color mixins ([#5168](https://github.com/dbollinger/material-components-web/issues/5168)) ([b5c6d66](https://github.com/dbollinger/material-components-web/commit/b5c6d66b40765c4eacf079e91230506339c1346b))
+* **radio:** Add support for 48px touch target ([#5032](https://github.com/dbollinger/material-components-web/issues/5032)) ([87b0a4c](https://github.com/dbollinger/material-components-web/commit/87b0a4c35e6162857f89026027c18f0c1b2697bf))
+* **ripple:** Reorganize ripple opacities ([008c4d3](https://github.com/dbollinger/material-components-web/commit/008c4d3191f9c2a76732688504d2299420734cdd))
+* **rtl:** Added a flag to turn-off mdc-rtl CSS ([#4996](https://github.com/dbollinger/material-components-web/issues/4996)) ([eb87f06](https://github.com/dbollinger/material-components-web/commit/eb87f0667523d650dbee72a1f84b19eed03c0f5a))
+* **snackbar:** Add option for indefinite timeout ([#4998](https://github.com/dbollinger/material-components-web/issues/4998)) ([4f11851](https://github.com/dbollinger/material-components-web/commit/4f11851a3375a0eafd6b3d4a4f43db2edcb89951))
+* **switch:** Add density support for switch component. ([#5124](https://github.com/dbollinger/material-components-web/issues/5124)) ([2c793b4](https://github.com/dbollinger/material-components-web/commit/2c793b43158cd583d490213e62d6f495fce1aa8f)), closes [#5104](https://github.com/dbollinger/material-components-web/issues/5104)
+* **switch:** Add elevation overlay structure ([#5281](https://github.com/dbollinger/material-components-web/issues/5281)) ([50f110a](https://github.com/dbollinger/material-components-web/commit/50f110a6cf8100e594bdbd6c02ee278c39924008))
+* **switch:** add ripple opacity customization mixins ([#5126](https://github.com/dbollinger/material-components-web/issues/5126)) ([8c0273f](https://github.com/dbollinger/material-components-web/commit/8c0273fea6a8d64a5965f963fed288b0919e3142))
+* **switch:** Restructure DOM ([#5312](https://github.com/dbollinger/material-components-web/issues/5312)) ([0ec1fab](https://github.com/dbollinger/material-components-web/commit/0ec1fabc39222cac4446c8e2b85d74d2a5d21e1a))
+* **tab:** Add text transform mixin ([#5144](https://github.com/dbollinger/material-components-web/issues/5144)) ([22d7ad2](https://github.com/dbollinger/material-components-web/commit/22d7ad2fb1796fbd71a3a5ee9c7ab2e77c60e34e))
+* **tab-bar:** Add a mixin to set scroller animation ([#5172](https://github.com/dbollinger/material-components-web/issues/5172)) ([d7c938a](https://github.com/dbollinger/material-components-web/commit/d7c938a29a925e1be0d7af69d13d8c4b5d54f3cb))
+* **tab-bar:** Add density mixin to tab-bar ([#5070](https://github.com/dbollinger/material-components-web/issues/5070)) ([45dc002](https://github.com/dbollinger/material-components-web/commit/45dc002e60a25a8a49c74a5f40b35faad04404f2))
+* **tab-scroller:** Add incrementScrollImmediate to bypass animation ([#5184](https://github.com/dbollinger/material-components-web/issues/5184)) ([2b878b3](https://github.com/dbollinger/material-components-web/commit/2b878b3e7c4493e5a5a8b2b9d5558265486b6657)), closes [#5123](https://github.com/dbollinger/material-components-web/issues/5123)
+* **tab-scroller:** Mixin for scroll transition ([#5154](https://github.com/dbollinger/material-components-web/issues/5154)) ([efda83d](https://github.com/dbollinger/material-components-web/commit/efda83dbed6299225a32a5add8c9ca12217c25d0))
+* **text-field:** Add density mixin to text field variants ([#5066](https://github.com/dbollinger/material-components-web/issues/5066)) ([a12101d](https://github.com/dbollinger/material-components-web/commit/a12101d6d7d44a5add3d7e3301fc721dfa98ffc9))
+* **text-field:** Add disabled state color mixins ([#5208](https://github.com/dbollinger/material-components-web/issues/5208)) ([66299b6](https://github.com/dbollinger/material-components-web/commit/66299b64613e8399af263d7021f93f9cdaf74ae3))
+* **text-field:** add feature targeting for styles ([#5378](https://github.com/dbollinger/material-components-web/issues/5378)) ([e8a9936](https://github.com/dbollinger/material-components-web/commit/e8a993677858893965608a55931d7e54c84e8c5d))
+* **text-field:** Center align inner elements for dynamic height ([#4990](https://github.com/dbollinger/material-components-web/issues/4990)) ([4d94b22](https://github.com/dbollinger/material-components-web/commit/4d94b2202bbb754622725a87c3126ac7d88e7230))
+* **textfield:** add end-alignment ([#5356](https://github.com/dbollinger/material-components-web/issues/5356)) ([847dd1a](https://github.com/dbollinger/material-components-web/commit/847dd1ada08bb0fd905adac7b7836540a0dd7e9c))
+* **textfield:** add prefix and suffix ([6601d24](https://github.com/dbollinger/material-components-web/commit/6601d24afdc3a3d0bd2a9b3fcca68c35c9415ec1)), closes [#1892](https://github.com/dbollinger/material-components-web/issues/1892)
+* Add index stylesheets to each MDC Web package ([#5539](https://github.com/dbollinger/material-components-web/issues/5539)) ([1814866](https://github.com/dbollinger/material-components-web/commit/181486643532e2166dced95daff9da786af3bdd1))
+* Add index stylesheets to mdc-image-list and mdc-layout-gr… ([#5546](https://github.com/dbollinger/material-components-web/issues/5546)) ([3a85313](https://github.com/dbollinger/material-components-web/commit/3a85313ac121703e8aeac583502adf9863d96a8e))
+* Use [@use](https://github.com/use) syntax in material-components-web Sass file and… ([#5573](https://github.com/dbollinger/material-components-web/issues/5573)) ([b4727e4](https://github.com/dbollinger/material-components-web/commit/b4727e43aa17afe03b240402ded590c0516267d5))
+* **textfield:** add filled class variant ([b70bc60](https://github.com/dbollinger/material-components-web/commit/b70bc601ef570dab4598ae6f3ca51bbf884fac96))
+* **textfield:** add forced LTR input ([490fbdc](https://github.com/dbollinger/material-components-web/commit/490fbdc092c5c59d63f83407b83b37fb524ed0e5))
+* **textfield:** add specific label-floating class ([a88c8e4](https://github.com/dbollinger/material-components-web/commit/a88c8e4dc873ae74a3afbae0dc8635dfaa03e67b))
+* **textfield:** Create float transition mixin ([ca61b65](https://github.com/dbollinger/material-components-web/commit/ca61b656fababdf25adaa307963d4f37e6d413ec))
+* **textfield:** Limit notched outline max-width ([0ab62a6](https://github.com/dbollinger/material-components-web/commit/0ab62a65b17192a94102231ca63f54adc39675ae))
+* **typography:** add container baseline mixins for flexbox ([69edc6e](https://github.com/dbollinger/material-components-web/commit/69edc6e2899636cfccb117376bb64dc0a267c588))
+* **typography:** add CSS custom properties ([6a56f38](https://github.com/dbollinger/material-components-web/commit/6a56f387c498e80cbac1cac5de6b4963325ffda6))
+
+
+### Reverts
+
+* Revert "feat(switch): Add elevation overlay structure (#5281)" (#5329) ([1fbf5bd](https://github.com/dbollinger/material-components-web/commit/1fbf5bd1d84b7b02eb7f0a7aff2b9c3eed0b4d3d)), closes [#5281](https://github.com/dbollinger/material-components-web/issues/5281) [#5329](https://github.com/dbollinger/material-components-web/issues/5329)
+* Revert "refactor(menu-surface): Allow any type during migration (#5201)" (#5212) ([62d3a09](https://github.com/dbollinger/material-components-web/commit/62d3a09b2d31c8c44b5c5ff1ff91fb26ad460b63)), closes [#5201](https://github.com/dbollinger/material-components-web/issues/5201) [#5212](https://github.com/dbollinger/material-components-web/issues/5212)
+* "fix(checkbox): change checkbox event type from change to click and add some logic for IE browser" ([ba30399](https://github.com/dbollinger/material-components-web/commit/ba30399adc901ca090c90bb1cad9410c81ae5fd1))
+* feat(chips): Consolidate interaction event handlers ([#5251](https://github.com/dbollinger/material-components-web/issues/5251)) ([#5301](https://github.com/dbollinger/material-components-web/issues/5301)) ([5e45d77](https://github.com/dbollinger/material-components-web/commit/5e45d77f3e387eff356f5ce93336d4b872c725c4))
+* fix(chips): Do not throw error if chip set becomes empty ([#5300](https://github.com/dbollinger/material-components-web/issues/5300)) ([d10e8cd](https://github.com/dbollinger/material-components-web/commit/d10e8cdf3cda4a735b1ae43bb17592f9383c8886))
+* fix(select): Do not fire change event on programmatic change ([#5255](https://github.com/dbollinger/material-components-web/issues/5255)) ([#5302](https://github.com/dbollinger/material-components-web/issues/5302)) ([ad9dfe7](https://github.com/dbollinger/material-components-web/commit/ad9dfe706de46d5dc131ad6615aa18f0e3b01133))
+
+
+### BREAKING CHANGES
+
+* **textfield:** Default textfields must now specify mdc-text-field--filled. Disabled outlined textfields no longer have a shaded background. Height mixin no longer specifies a baseline override, use typography's baseline-top mixin.
+
+PiperOrigin-RevId: 307134283
+* **mdc-fab:** This changes the structure of the FAB element by moving the ripple from the outer element to an inner mdc-fab__ripple element.
+
+OLD
+
+```html
+<button class="mdc-fab" aria-label="Favorite">
+  <span class="mdc-fab__icon material-icons">favorite</span>
+</button>
+```
+
+NEW
+
+```html
+<button class="mdc-fab" aria-label="Favorite">
+  <div class="mdc-fab__ripple"></div>
+  <span class="mdc-fab__icon material-icons">favorite</span>
+</button>
+```
+* **textfield:** removed the following variables: `$input-padding`, `$input-padding-top`, `$input-padding-bottom`, `$outlined-input-padding-top`, `$outlined-input-padding-bottom`, `$input-border-bottom`
+
+PiperOrigin-RevId: 300259065
+* **linear-progress:** DOM for linear progress buffer changed. MDCLinearProgressAdapter method `getBuffer`, `getPrimaryBar`, `setStyle` removed. MDCLinearProgressAdapter method `setBufferBarStyle`, `setPrimaryBarStyle` added.
+
+PiperOrigin-RevId: 299133963
+* **linear-progress:** DOM for linear progress buffer changed. MDCLinearProgressAdapter method `getBuffer`, `getPrimaryBar`, `setStyle` removed. MDCLinearProgressAdapter method `setBufferBarStyle`, `setPrimaryBarStyle` added.
+
+PiperOrigin-RevId: 298645833
+* **typography:** `typography.baseline-top()` and `typography.baseline-bottom()` are now private. Use `typography.baseline()` for containers and `typography.text-baseline()` for text with $top and $bottom params.
+
+PiperOrigin-RevId: 297926710
+* **chips:** The touch target and text now appear inside the primary action element. Please see the readme for markup changes.
+
+PiperOrigin-RevId: 294259413
+* **textfield:** filled text fields must include a `<div class="mdc-text-field__ripple"></div>`
+
+PiperOrigin-RevId: 292641405
+
+Co-authored-by: Material Web Copybara Robot <59487319+material-web-copybara@users.noreply.github.com>
+* **textfield:** Filled textfields will no longer show a floating label at certain densities. This can be overridden by setting `$mdc-text-field-minimum-height-for-filled-label: 40px`
+* **chips:** Both `MDCChipAdapter` and `MDCChipSetAdapter` have new methods. `MDCChipSetFoundation` event handlers now accept the corresponding chip event detail interface as the sole argument. The `root` property has been removed from the `MDCChipRemovalEventDetail` interface.
+* **line-ripple:** `mdc-line-ripple-color()` mixin has been renamed to `mdc-line-ripple-active-color()`
+* **grid-list:** Per the deprecation notice for grid-list, this component has been
+removed from MDC-Web. Some of its functionalities are available in the MDC Image List package instead. It is recommended that you migrate to the mdc-image-list package to continue to receive new features and updates.
+* Four variables and a mixin in mdc-textfield were renamed to use a mdc-text-field- prefix when depended on via @import (formerly mdc-required-text-field-label-asterisk_, now required-label-asterisk_).
+* **textfield:** icons must use `.mdc-text-field__icon--leading` or `.mdc-text-field__icon--trailing` classes. `mdc-text-field-icon-color()` mixin has been split into `mdc-text-field-leading-icon-color()` and `mdc-text-field-trailing-icon-color()`.
+
+* chore(textfield): use --leading/trailing modifiers for icons
+
+* chore(textfield): docs typo
+
+* chore(textfield): revert hover fix
+
+* chore(textfield): fix unclosed css block
+
+* chore(textfield): separate position mixins for leading/trailing icons
+
+* chore(textfield): restore two-icons position mixin
+
+* chore(textfield): update component test with icon classes
+
+* chore(textfield): update foundation test for preventDefault error
+* **switch:** Added setNativeControlAttr method in mdc-switch adapter.
+* **checkbox:** remove event listener for 'change' and add event listener for 'click'.
+
+- Add handleClick() method in foundation to handle click event.
+- Add setCheck() method into component to change check status.
+* **switch:** Switch DOM structure has changed. See switch README for details
+* **textfield:** mdc-text-field--dense and associated mixins/variables have been removed. Use the density() mixin instead.
+
+PiperOrigin-RevId: 301426122
+* Removed `$edgeOptOut` option from `mdc-theme-prop()` Sass mixin.
+* **chips:** the handleInteraction and handleTrailingIconInteraction handlers have been removed from the MDCChipFoundation. The handleClick handler has been added to the MDCChipFoundation
+* Adds new adapter methods to MDCLinearProgressAdapter.
+* **elevation:** Functions moved into the _functions.scss file
+* **touchtarget:** Renames mixin from mdc-touch-target-component => mdc-touch-target-margin
+* **text-field:** Redundant mixins `mdc-text-field-textarea-fill-color`, `mdc-text-field-textarea-stroke-color`, `mdc-text-field-fullwidth-bottom-line-color` removed. Instead, use `mdc-text-field-fill-color`, `mdc-text-field-outline-color`, and `mdc-text-field-bottom-line-color` respectively to achieve the same effect.
+* **checkbox:** `mdc-checkbox-ink-color` mixin now only applies to enabled checkboxes
+* **linear-progress:** MDCLinearProgressAdapter adapter has new `forceLayout` method
+* **select:** In MDCMenu and MDCMenuSurface, `hoistMenuToBody` adapter method removed.  In MDCSelect, HTML structure changed: the select anchor is now wrapped in a parent element, and the anchor's sibling is the select menu. Support for native select removed. Support added for select with no label. MDCSelectAdapter methods removed: `getValue`, `setValue`, `isMenuOpen`, `setSelectedIndex`, `checkValidity`, `setValid`, `toggleClassAtIndex`. MDCSelectAdapter methods added: `hasLabel`, `getSelectedMenuItem`, `setSelectedText`, `isSelectedTextFocused`, `get/setSelectedTextAttr`, `getAnchorElement`, `setMenuAnchorElement`, `setMenuAnchorCorner`, `setMenuWrapFocus`, `set/removeAttributeAtIndex`, `focusMenuItemAtIndex`, `getMenuItemValues`, `getMenuItemCount`, `getMenuItemCount`, `getMenuItemAttr`, `getMenuItemTextAtIndex`, `add/removeClassAtIndex`. MDCSelectFoundation `setValue` method removed; `getDisabled`, `handleMenuItemAction`, `getSelectedIndex`, `get/setRequired`, `init` added.
+* **radio:** In Checkbox, Renamed sass variables `$mdc-radio-touch-area` => `$mdc-radio-ripple-size` & `$mdc-radio-ui-size` => `$mdc-radio-icon-size` to be consistent with checkbox. Also, removed `$mdc-radio-ui-pct` sass variable.
+* **switch:** Renames switch variables $mdc-switch-tap-target-size => $mdc-switch-ripple-size, removes $mdc-switch-tap-target-initial-position and $mdc-switch-native-control-width.
+* **list:** New adapter method listItemAtIndexHasClass
+* **list:** Renamed mixin `mdc-list-item-shape-radius()` => `mdc-list-single-line-shape-radius()`
+* **density:** Renamed sass mixins & variables in MDC Data Table - `mdc-data-table-header-row-height` => `mdc-data-table-header-cell-height` & `mdc-data-table-row-height` => `mdc-data-table-cell-height`. Also removed `mdc-button--dense` variant, use button's density mixin instead.
+* **text-field:** Removed sass variable in notched outline - `$mdc-notched-outline-transition-duration`.
+* **button:** Variable `$mdc-button-disabled-container-fill-color`
+renamed to `$mdc-button-disabled-container-color`.
+
+
+
+## [3.1.1](https://github.com/dbollinger/material-components-web/compare/v3.1.0...v3.1.1) (2019-08-14)
+
+
+### Bug Fixes
+
+* **button:** Add `overflow: visible` to button. ([#4973](https://github.com/dbollinger/material-components-web/issues/4973)) ([905e84e](https://github.com/dbollinger/material-components-web/commit/905e84e4a2778dcc37202d85acf7bd7a306b0933))
+* **chips:** Ignore selection events in chip set ([#4878](https://github.com/dbollinger/material-components-web/issues/4878)) ([94c6a00](https://github.com/dbollinger/material-components-web/commit/94c6a000b46c3e39af4cf0795dbe2da584cfbf97))
+* **chips:** Remove keyCode check ([#4966](https://github.com/dbollinger/material-components-web/issues/4966)) ([e6304c4](https://github.com/dbollinger/material-components-web/commit/e6304c46d0f9d14602c7924950db304850bb50d9))
+* **chips:** Stop emitting events in handlers ([#4969](https://github.com/dbollinger/material-components-web/issues/4969)) ([cfd81dc](https://github.com/dbollinger/material-components-web/commit/cfd81dc8cc1648b03f69ebe1f8eb1c0b8e6ad27e))
+* **data-table:** Fixed alignment of header cell title for numer… ([#4963](https://github.com/dbollinger/material-components-web/issues/4963)) ([b6274a7](https://github.com/dbollinger/material-components-web/commit/b6274a702a562f6a8ad1cc612af006809ced21d1))
+
+
+### Features
+
+* **button:** Add support for increased touch target to button. ([#4948](https://github.com/dbollinger/material-components-web/issues/4948)) ([1d7a2e6](https://github.com/dbollinger/material-components-web/commit/1d7a2e623236b47046d719270ea1508ba9a3e224))
+* **checkbox:** Move ripple to child node ([#4981](https://github.com/dbollinger/material-components-web/issues/4981)) ([9712b24](https://github.com/dbollinger/material-components-web/commit/9712b24b2e7d16b988b793df5b3802052071c87c))
+* **chips:** Add support for increased touch target to chips. ([#4970](https://github.com/dbollinger/material-components-web/issues/4970)) ([6aa109d](https://github.com/dbollinger/material-components-web/commit/6aa109d5b0b5010f979fde78a31a18c3888e489c))
+* **radio:** Move ripple to child element ([#4983](https://github.com/dbollinger/material-components-web/issues/4983)) ([100ab37](https://github.com/dbollinger/material-components-web/commit/100ab37d8619b7d976658c6085e653f7e1932bb4))
+* **touch-target:** Add touch target mixins. ([#4940](https://github.com/dbollinger/material-components-web/issues/4940)) ([b2e0fea](https://github.com/dbollinger/material-components-web/commit/b2e0feac33cbdcb726e8b88ce5f1fb8fb3eef95c))
+
+
+### BREAKING CHANGES
+
+* **radio:** Ripple has been moved to a child element. See readme for updates.
+
+
+
+# [3.1.0](https://github.com/dbollinger/material-components-web/compare/v3.0.0...v3.1.0) (2019-07-22)
+
+
+### Bug Fixes
+
+* update TypeScript version to 3.5.x and fix typing errors ([#4853](https://github.com/dbollinger/material-components-web/issues/4853)) ([0657504](https://github.com/dbollinger/material-components-web/commit/0657504ee1b59a6a686db91b5a3363287f784b30))
+* **checkbox:** Fixed checkbox container fill color when animati… ([#4879](https://github.com/dbollinger/material-components-web/issues/4879)) ([d393fb5](https://github.com/dbollinger/material-components-web/commit/d393fb56cfc6428e29f49baa8c58353233a84daf))
+* **checkbox:** Fixed hover focus colors for unchecked checkbox ([#4868](https://github.com/dbollinger/material-components-web/issues/4868)) ([1d8fbf5](https://github.com/dbollinger/material-components-web/commit/1d8fbf5dc8322149f18bbad0b11b4c6ecd913f21))
+* **fab:** clear text decoration ([#4865](https://github.com/dbollinger/material-components-web/issues/4865)) ([b524a12](https://github.com/dbollinger/material-components-web/commit/b524a12535eb9b74e322742e152e18a966f9a256))
+* **infrastructure:** support ssr by removing the reference from window ([#4864](https://github.com/dbollinger/material-components-web/issues/4864)) ([e5c5ea5](https://github.com/dbollinger/material-components-web/commit/e5c5ea51d6052454fff54419416a5afe653b2965))
+* **menu:** Vertically center the group icon ([#4862](https://github.com/dbollinger/material-components-web/issues/4862)) ([d551dfd](https://github.com/dbollinger/material-components-web/commit/d551dfde9dd377e7ca593565519ca49abd559d29))
+* **menu:** Vertically center the group icon ([#4862](https://github.com/dbollinger/material-components-web/issues/4862)) ([c5738ed](https://github.com/dbollinger/material-components-web/commit/c5738ed64e97cba5177377814bd838c6cfa03e3c))
+
+
+### Code Refactoring
+
+* **button:** Add ripple target as an inner element. ([#4890](https://github.com/dbollinger/material-components-web/issues/4890)) ([dffefe6](https://github.com/dbollinger/material-components-web/commit/dffefe6b20da243c1e8b85506949bc37c10b01a9))
+* **slider:** Functional slider tick visuals with css background ([#4756](https://github.com/dbollinger/material-components-web/issues/4756)) ([8f851d9](https://github.com/dbollinger/material-components-web/commit/8f851d9ed2f75dc8b8956d15b3bb2619e59fa8a9))
+
+
+### Features
+
+* **chips:** Add keyboard navigation ([#4844](https://github.com/dbollinger/material-components-web/issues/4844)) ([42065fe](https://github.com/dbollinger/material-components-web/commit/42065fe416bcd1b082d0d55ad985084f3d018ded)), closes [#2259](https://github.com/dbollinger/material-components-web/issues/2259)
+* **chips:** Add setSelectedFromChipset method ([#4872](https://github.com/dbollinger/material-components-web/issues/4872)) ([283bd55](https://github.com/dbollinger/material-components-web/commit/283bd55c829dd132013acf41f7239579b7e6dea0))
+* **chips:** Use index for all chip operations ([#4869](https://github.com/dbollinger/material-components-web/issues/4869)) ([07078bb](https://github.com/dbollinger/material-components-web/commit/07078bbb62d9f598461c7ff3c6b51c67d7b339de))
+* **drawer:** add feature targeting for styles ([#4877](https://github.com/dbollinger/material-components-web/issues/4877)) ([4d65d29](https://github.com/dbollinger/material-components-web/commit/4d65d29704dc627c39675ff2086eb4717149302a))
+* **list:** Add mixin for disabled text opacity ([#4861](https://github.com/dbollinger/material-components-web/issues/4861)) ([d68f8a7](https://github.com/dbollinger/material-components-web/commit/d68f8a7a641062ee29d68ae20119e994f4f9e2e8))
+* **ripple:** Add support for ripple target to mixins. ([#4880](https://github.com/dbollinger/material-components-web/issues/4880)) ([08dbe69](https://github.com/dbollinger/material-components-web/commit/08dbe69656604b4fa3afacc677a17d1fa9c4d743))
+* **snackbar:** add feature targeting for styles ([#4876](https://github.com/dbollinger/material-components-web/issues/4876)) ([1b7aea1](https://github.com/dbollinger/material-components-web/commit/1b7aea152dd9a8ae1d814052b8faf61290415136))
+
+
+### BREAKING CHANGES
+
+* **slider:** remove adapter methods `appendTrackMarkers`, `removeTrackMarkers `, `setLastTrackMarkersStyleProperty `, and add adapter method `setTrackMarkers`.
+* **button:** This changes the structure of the button element by moving the ripple from the outer <button> element to an inner `mdc-button__ripple` element.
+
+OLD
+```
+<button class="mdc-button">
+  <span class="mdc-button__label">Hello World</span>
+</button>
+```
+
+NEW
+```
+<button class="mdc-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Hello World</span>
+</button>
+```
+* **chips:** MDCChipSetAdapter#removeChip has been replaced with MDCChipSetAdapter#removeChipAtIndex. MDCChipSetAdapter#setSelected has been replaced with MDCChipSetAdapter#selectChipAtIndex
+* **chips:** Chips markup, adapters, foundations, and events have changed.
+
+
+
+# 3.0.0 (2019-06-25)
+
+
+
+
 
 # [4.0.0](https://github.com/material-components/material-components-web/compare/v3.2.0...v4.0.0) (2019-11-02)
 
